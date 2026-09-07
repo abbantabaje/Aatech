@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>AATECH Admin Dashboard</title><link rel="stylesheet" href="admin.css"></head>
+<body>
+<div id="loginScreen" class="login-screen"><div class="login-box"><div class="brand-mark">AA</div><div class="eyebrow">AATECH ADMIN</div><h1>Welcome back</h1><p>Sign in to manage your company projects.</p><form id="loginForm"><label>Username<input id="username" required autocomplete="username"></label><label>Password<input id="password" type="password" required autocomplete="current-password"></label><button class="btn" type="submit">Sign In</button><div id="loginError" class="error"></div></form><a href="index.html" class="back">← Back to website</a></div></div>
+<div id="dashboard" class="dashboard hidden"><header><div class="container topbar"><a href="index.html" class="brand"><span class="brand-mark">AA</span><span>AATECH <small>ADMIN</small></span></a><div><a class="view" href="index.html">View Site</a><button id="logoutBtn" class="logout">Logout</button></div></div></header>
+<main class="container main"><div class="dash-title"><div><div class="eyebrow">CONTENT MANAGEMENT</div><h1>Projects Dashboard</h1><p>Add your latest company work and it will appear on the website.</p></div><button id="newBtn" class="btn">+ New Project</button></div>
+<section class="panel">
+      <div class="panel-heading"><h2>Project Requests</h2><span class="small-note">Requests submitted from the website</span></div>
+      <div id="requestsList"></div>
+      <div id="noRequests" class="no-projects hidden">No project requests yet.</div>
+    </section>
+    <section class="panel projects-panel">
+      <div class="panel-heading"><h2>Published Projects</h2></div>
+      <div id="projectsList"></div>
+      <div id="noProjects" class="no-projects hidden">No projects yet. Add your first completed project.</div>
+    </section></main></div>
+<div id="modal" class="modal hidden"><div class="modal-card"><div class="modal-head"><h2 id="modalTitle">Add Project</h2><button id="closeModal">×</button></div><form id="projectForm"><input id="editId" type="hidden"><label>Project title<input id="title" required maxlength="80" placeholder="e.g. CCTV Installation – Charanchi Clinic"></label><label>Category<select id="category"><option>CCTV & Security</option><option>Networking</option><option>Computer & IT</option><option>Solar & Inverter</option><option>Drone Technology</option><option>Technical Support</option></select></label><label>Location<input id="location" maxlength="100" placeholder="e.g. Charanchi, Katsina"></label><label>Project date<input id="date" type="date"></label><label>Description<textarea id="description" rows="4" maxlength="500" placeholder="Describe the work completed..."></textarea></label><label>Project image<input id="image" type="file" accept="image/*"><small>Images are stored in this browser. For very large images, use a compressed photo.</small></label><div class="form-actions"><button type="button" id="cancelBtn" class="cancel">Cancel</button><button class="btn" type="submit">Save Project</button></div></form></div></div>
+<script src="admin.js"></script></body></html>

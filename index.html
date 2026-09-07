@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AATECH Integrated Solutions Ltd - ICT, CCTV, networking, solar/inverter, drone technology and technical solutions.">
+  <title>AATECH Integrated Solutions Ltd | Technology Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#home"><img src="assets/logo.png" alt="AATECH Integrated Solutions Ltd logo"><span>AATECH <small>INTEGRATED SOLUTIONS LTD</small></span></a>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+    <nav id="navLinks">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#request">Request a Project</a><a href="#contact">Contact</a>
+      <a class="admin-link" href="admin.html">Admin</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">SMART TECHNOLOGY • RELIABLE SOLUTIONS</div>
+      <h1>Technology solutions built for <span>real-world results.</span></h1>
+      <p>We provide professional ICT, CCTV, networking, solar/inverter, drone and technical support solutions for businesses, organizations and individuals.</p>
+      <div class="hero-actions"><a class="btn primary" href="#projects">View Our Work</a><a class="btn secondary" href="#contact">Contact AATECH</a></div>
+      <div class="trust-row"><span>✓ Professional Service</span><span>✓ Practical Solutions</span><span>✓ Technical Support</span></div><div class="registration-badge">✓ CAC Registered Company • RC 9801367</div>
+    </div>
+    <div class="hero-card">
+      <div class="orbit">AA</div>
+      <div><strong>AATECH</strong><p>Integrated technology solutions</p></div>
+      <div class="mini-stats"><div><b>ICT</b><small>Solutions</small></div><div><b>CCTV</b><small>Security</small></div><div><b>24/7</b><small>Support</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container split">
+    <div><div class="eyebrow">ABOUT US</div><h2>Technology that works for you.</h2></div>
+    <div><p>AATECH INTEGRATED SOLUTIONS LTD is a technology-focused company delivering practical and dependable ICT and technical services.</p><p>From CCTV and computer support to networking, solar/inverter systems and drone technology, our goal is to help clients solve problems with the right technology.</p></div>
+  </div>
+</section>
+
+<section id="services" class="section alt">
+  <div class="container">
+    <div class="section-heading"><div><div class="eyebrow">WHAT WE DO</div><h2>Our Services</h2></div><p>Professional solutions designed around your needs.</p></div>
+    <div class="cards">
+      <article class="card"><div class="icon">◉</div><h3>CCTV & Security</h3><p>Installation, configuration and support for CCTV surveillance systems.</p></article>
+      <article class="card"><div class="icon">⌁</div><h3>Networking</h3><p>Network installation, configuration, connectivity and technical support.</p></article>
+      <article class="card"><div class="icon">▣</div><h3>Computer & IT</h3><p>Computer setup, software installation, maintenance and IT support.</p></article>
+      <article class="card"><div class="icon">☀</div><h3>Solar & Inverter</h3><p>Solar and inverter installation solutions for dependable power needs.</p></article>
+      <article class="card"><div class="icon">✦</div><h3>Drone Technology</h3><p>Drone-related technical support, configuration and project solutions.</p></article>
+      <article class="card"><div class="icon">⚙</div><h3>Technical Support</h3><p>Practical troubleshooting and technology support for organizations and individuals.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <div class="section-heading"><div><div class="eyebrow">OUR WORK</div><h2>Recent Projects</h2></div><p>Projects added through the Admin Dashboard appear here automatically.</p></div>
+    <div id="projectGrid" class="project-grid"></div>
+    <div id="emptyProjects" class="empty hidden"><h3>Our project portfolio is being updated.</h3><p>New completed projects will appear here.</p></div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container cta-inner"><div><div class="eyebrow">LET'S WORK TOGETHER</div><h2>Have a technology project in mind?</h2></div><a class="btn light" href="#contact">Talk to Us</a></div>
+</section>
+
+
+<section id="request" class="section request-section">
+  <div class="container request-grid">
+    <div>
+      <div class="eyebrow">START A PROJECT</div>
+      <h2>Tell us what you need.</h2>
+      <p>Have a new project, installation, repair or technology requirement? Send us the details. We will review your request and contact you.</p>
+      <div class="request-points">
+        <div>✓ CCTV & security projects</div>
+        <div>✓ Networking & ICT projects</div>
+        <div>✓ Solar & inverter projects</div>
+        <div>✓ Drone & technical projects</div>
+      </div>
+      <div class="form-note"><strong>Fast contact:</strong> You can also reach AATECH directly on WhatsApp at 09035673722.</div>
+    </div>
+    <div class="request-card">
+      <form id="projectRequestForm">
+        <div class="form-row">
+          <label>Full Name<input name="name" required maxlength="80" placeholder="Your full name"></label>
+          <label>Phone Number<input name="phone" required maxlength="30" placeholder="080..."></label>
+        </div>
+        <div class="form-row">
+          <label>Email Address<input name="email" type="email" maxlength="120" placeholder="you@example.com"></label>
+          <label>Location<input name="location" required maxlength="100" placeholder="City / Area"></label>
+        </div>
+        <label>Service Needed
+          <select name="service" required>
+            <option value="">Select a service</option>
+            <option>CCTV & Security</option>
+            <option>Networking</option>
+            <option>Computer & IT</option>
+            <option>Solar & Inverter</option>
+            <option>Drone Technology</option>
+            <option>Technical Support</option>
+            <option>Other Project</option>
+          </select>
+        </label>
+        <label>Project Title<input name="title" required maxlength="120" placeholder="e.g. CCTV installation for my office"></label>
+        <label>Project Details<textarea name="details" required rows="6" maxlength="1500" placeholder="Please describe the work you need, number of rooms/cameras/devices, site details, or any other useful information."></textarea></label>
+        <label>Preferred Date <span class="optional">(optional)</span><input name="preferredDate" type="date"></label>
+        <button class="btn primary full" type="submit">Send Project Request</button>
+        <p id="requestStatus" class="form-status" aria-live="polite"></p>
+        <small class="privacy-note">Your request is prepared for AATECH and can be sent directly through WhatsApp or email.</small>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section contact-section">
+  <div class="container contact-grid">
+    <div><div class="eyebrow">CONTACT</div><h2>Let's build the right solution.</h2><p>Tell us what you need and our team can help you choose a practical technology solution.</p></div>
+    <div class="contact-card">
+      <p><strong>Company</strong><br>AATECH INTEGRATED SOLUTIONS LTD</p><p><strong>CAC Registration</strong><br>RC 9801367 • Registered in Nigeria</p>
+      <p><strong>Phone</strong><br><a href="tel:+2349035673722">09035673722</a></p>
+      <p><strong>Email</strong><br><a href="mailto:aatechsolutionltd@gmail.com">aatechsolutionltd@gmail.com</a></p>
+      <p><strong>Address</strong><br>Amadi Kurti Road, Sabuwar Unguwa</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="container footer"><span>© <span id="year"></span> AATECH INTEGRATED SOLUTIONS LTD</span><span>Technology • Security • Connectivity</span></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
